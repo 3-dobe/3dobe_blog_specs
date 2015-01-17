@@ -12,7 +12,7 @@
  
 2. 如果贴的代码为开源项目源码需注明文件名，如不注明则默认为上次注明的文件
  
-3. 贴代码时不提倡整个函数一次性贴完，当说明文字只需要一个较长函数的一部分代码时，则需要用“空行-......-空行”来表示无用的代码，并同时要展现完整的函数块，如下代码块所示(frameworks/base/services/java/com/android/server/am/ActivityManagerService.java)：
+3. 贴代码时不提倡整个函数一次性贴完，当说明文字只需要一个较长函数的一部分代码时，则需要用“空行-......-空行”或者“空格-......空格”来表示无用的代码，并同时要展现完整的函数块，如下代码块所示(frameworks/base/services/java/com/android/server/am/ActivityManagerService.java)：
 
         private ServiceLookupResult retrieveServiceLocked(Intent service,
                 String resolvedType, int callingPid, int callingUid) {
@@ -22,11 +22,7 @@
             }
             Intent.FilterComparison filter = new Intent.FilterComparison(service);
             r = mServicesByIntent.get(filter);
-            if (r == null) {
-                    
-                ......
-        
-            }
+            if (r == null) { ...... }
             
             ......
         
